@@ -56,65 +56,6 @@
       }
     },
     {
-      "id": 2,
-      "name": {
-        "english": "Ivysaur2",
-        "japanese": "フシギソウ",
-        "chinese": "妙蛙草",
-        "french": "Herbizarre"
-      },
-      "type": [
-        "Grass",
-        "Poison"
-      ],
-      "base": {
-        "HP": 60,
-        "Attack": 62,
-        "Defense": 63,
-        "Sp. Attack": 80,
-        "Sp. Defense": 80,
-        "Speed": 60
-      },
-      "species": "Seed Pokémon",
-      "description": "There is a bud on this Pokémon’s back. To support its weight, Ivysaur’s legs and trunk grow thick and strong. If it starts spending more time lying in the sunlight, it’s a sign that the bud will bloom into a large flower lat\n",
-      "evolution": {
-        "prev": [
-          "1",
-          "Level 16"
-        ],
-        "next": [
-          [
-            "3",
-            "Level 32"
-          ]
-        ]
-      },
-      "profile": {
-        "height": "1 m",
-        "weight": "13 kg",
-        "egg": [
-          "Monster",
-          "Grass"
-        ],
-        "ability": [
-          [
-            "Overgrow",
-            "false"
-          ],
-          [
-            "Chlorophyll",
-            "true"
-          ]
-        ],
-        "gender": "87.5:12.5"
-      },
-      "image": {
-        "sprite": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/002.png",
-        "thumbnail": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/002.png",
-        "hires": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/002.png"
-      }
-    },
-    {
       "id": 3,
       "name": {
         "english": "Venusaur",
@@ -135,7 +76,7 @@
         "Speed": 80
       },
       "species": "Seed Pokémon",
-      "description": "There is a large flower on Venusaur’s back. The flower is said to take on vivid colors if it gets plenty of nutrition and sunlight. The flower’s aroma soothes the emotions of people.",
+      "description": "There is a large flower on Venusaur’s back. The flower is said to take on vivid colors if it gets plenty of nutrition and sunlight. The flower’s aroma soothes the emotions of people.\njdbnjdsfj",
       "evolution": {
         "prev": [
           "2",
@@ -47336,6 +47277,51 @@
         "hires": ""
       },
       "id": 900
+    },
+    {
+      "name": {
+        "english": "Alejandro Palma",
+        "japanese": "",
+        "chinese": "",
+        "french": ""
+      },
+      "type": [],
+      "base": {
+        "HP": 0,
+        "Attack": 0,
+        "Defense": 0,
+        "Sp. Attack": 0,
+        "Sp. Defense": 0,
+        "Speed": 0
+      },
+      "species": "",
+      "description": "asdfcdxvc dzsx",
+      "evolution": {
+        "next": [
+          "",
+          ""
+        ]
+      },
+      "profile": {
+        "height": "",
+        "weight": "",
+        "egg": [
+          ""
+        ],
+        "ability": [
+          [
+            "",
+            false
+          ]
+        ],
+        "gender": ""
+      },
+      "image": {
+        "sprite": "",
+        "thumbnail": "",
+        "hires": ""
+      },
+      "id": 901
     }
   ]
 }

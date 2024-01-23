@@ -2,6 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { Pokemon } from '../interfaces/Pokemon';
 import { PokemonsService } from '../services/pokemons.service';
 import { FormsModule } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-add-pokemon',
@@ -49,7 +50,8 @@ export class AddPokemonComponent {
   @Input() id!: number;
   edit : boolean = false;
 
-  constructor(private servicio: PokemonsService){}
+  constructor(private servicio: PokemonsService,
+    private router: Router){}
 
   ngOnInit(): void {
     if (this.id) {
@@ -60,17 +62,17 @@ export class AddPokemonComponent {
           this.edit = true;
         },
         error: (error) => console.log(error)
-        
       })
     }
-    
   }
   submit(){
     if (this.edit) {
       
       this.servicio.updatePokemon(this.id, this.pokemon)
       .subscribe({
-        next: (pokemon) => this.exito = true
+        next: (pokemon) => {this.exito = true,
+        this.router.navigate(['/pokemons'])
+        }
       })
     }
     else{

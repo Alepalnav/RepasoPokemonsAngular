@@ -10,19 +10,19 @@ export class PokemonsService {
 
   private pokemons: Pokemon[]=[]
 
-  // private url: string = "http://localhost:3000/pokemons/"
-  private url: string = "http://localhost:3000/pokemons?_limit=20"
+  private url: string = "http://localhost:3000/pokemons"
+  // private url: string = "http://localhost:3000/pokemons?_limit=20"
 
   constructor(private http: HttpClient) {
     console.log('servicio iniciado')
    }
 
    getPokemons(): Observable<Pokemon[]> {
-    return this.http.get<Pokemon[]>(this.url);
+    return this.http.get<Pokemon[]>(`${this.url}?_limit=20`);
   }
 
   getPokemon(id:Number): Observable<Pokemon> {
-    return this.http.get<Pokemon>(`${this.url}${id}`);
+    return this.http.get<Pokemon>(`${this.url}/${id}`);
   }
 
   addPokemon(pokemon: Omit<Pokemon,'id'>): Observable<Pokemon> {
@@ -30,11 +30,11 @@ export class PokemonsService {
   }
 
   updatePokemon(id: number, pokemon: Omit<Pokemon,'id'>):Observable<Pokemon>{
-    return this.http.put<Pokemon>(`${this.url}${id}`,pokemon)
+    return this.http.put<Pokemon>(`${this.url}/${id}`,pokemon)
   }
 
   deletePokemon(id: number):Observable<Object>{
-    return this.http.delete<Object>(`${this.url}${id}`)
+    return this.http.delete<Object>(`${this.url}/${id}`)
   }
 
   searchPokemon(name: string): Pokemon[]{
