@@ -1,0 +1,16 @@
+<h1 *ngIf="!edit ; else editTemplate">Add minion</h1>
+<ng-template #editTemplate>
+    <h1>Edit minion</h1>
+</ng-template>
+<form (ngSubmit)="submit()">
+    <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" name="name" id="name" [(ngModel)]="pokemon.name.english">
+    </div>
+    <div class="mb-3">
+        <label for="bio" class="form-label">Bio</label>
+        <textarea name="bio" id="" cols="30" rows="10" [(ngModel)]="pokemon.description"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
